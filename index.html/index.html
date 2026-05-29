@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Universe | Science & Finance</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="#inicio" class="logo">
+                    <img src="img/20260527_1245_image.png" alt="Logo BTS ARMY" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#contexto-fib" class="nav-link">Fibonacci</a></li>
+                    <li><a href="#primos" class="nav-link">N. Primos</a></li>
+                    <li><a href="#ambos" class="nav-link">Criptografía</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+     <section id="inicio" class="section hero-section" aria-label="Introducción a Criptografía y Patrones">
+    <div class="hero-container-centered">
+        
+        <p class="hero-badge">Fibonacci & Primos</p>
+        
+        <h1 class="hero-title-giant">Criptografía y Patrones Descubiertos</h1>
+        
+        <p class="hero-subtitle">
+            Explora cómo se aplican en la ingeniería moderna la sucesión de Fibonacci, las propiedades asimétricas de los números primos y el poder de fusionar ambos sistemas en soluciones de seguridad de alta entropía.
+        </p>
+        
+        <nav class="hero-buttons-group-centered" aria-label="Enlaces de acción principal">
+            <a href="#contexto-fib" class="btn-hero-cyber btn-lila">
+                <span class="btn-icon">📊</span> Proyectar Ahorro
+            </a>
+            <a href="#contexto-primos" class="btn-hero-cyber btn-rosa">
+                <span class="btn-icon">🛡️</span> Validar Seguridad
+            </a>
+            <a href="#ambos" class="btn-hero-cyber btn-outline">
+                <span class="btn-icon">✨</span> Fusión Simbiótica
+            </a>
+        </nav>
+
+    </div>
+</section>
+
+        <section id="contexto-fib" class="section alternate-bg">
+            <div class="contenedor">
+                <div class="content-box">
+                    <span class="badge">Aplicando Fibonacci</span>
+                    <h2>Ahorra Fácilmente</h2>
+                    <p>En las finanzas personales, el ahorro lineal clásico (guardar siempre la misma cantidad fija) suele volverse monótono o insuficiente para alcanzar metas de alto impacto a corto plazo. La solución óptima a este desafío de acumulación radica en la <strong>Proporción Áurea y la Serie de Fibonacci</strong>.</p>
+                    <p>Al aplicar un modelo de ahorro basado en esta secuencia, <strong>cada semana depositas la suma de lo que ahorraste en las dos semanas anteriores</strong>, multiplicado por un factor base. Gracias a la tasa de crecimiento orgánico de Fibonacci, el sistema genera una aceleración de capital exponencial moderada al principio y sumamente retadora al final, consolidando un hábito financiero inquebrantable.</p>
+                </div>
+                
+                <div class="tabla-contenedor">
+                    <h3>Escala de Proyección Base (1.00)</h3>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Factor</th>
+                                    <th>Monto</th>
+                                    <th>Total Acumulado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Semana 1</td><td>F(1) = 1</td><td>Bs. 1.00</td><td class="txt-verde">Bs. 1.00</td></tr>
+                                <tr><td>Semana 2</td><td>F(2) = 1</td><td>Bs. 1.00</td><td class="txt-verde">Bs. 2.00</td></tr>
+                                <tr><td>Semana 3</td><td>F(3) = 2</td><td>Bs. 2.00</td><td class="txt-verde">Bs. 4.00</td></tr>
+                                <tr><td>Semana 4</td><td>F(4) = 3</td><td>Bs. 3.00</td><td class="txt-verde">Bs. 7.00</td></tr>
+                                <tr><td>Semana 5</td><td>F(5) = 5</td><td>Bs. 5.00</td><td class="txt-verde">Bs. 12.00</td></tr>
+                                <tr><td>Semana 6</td><td>F(6) = 8</td><td>Bs. 8.00</td><td class="txt-verde">Bs. 20.00</td></tr>
+                                <tr><td>Semana 7</td><td>F(7) = 13</td><td>Bs. 13.00</td><td class="txt-verde">Bs. 33.00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tarjeta" id="simulador-fibonacci-section">
+            <h2><span class="icon">🧮</span> Explicación del Algoritmo</h2>
+            <p>El motor matemático calcula la proyección de depósitos sumando de forma iterativa los dos estados financieros anteriores. El sistema arranca con un multiplicador inicial en las semanas 1 y 2:</p>
+            
+            <div class="secuencia-visual">
+                <span class="nodo animate">1</span><span class="op">+</span>
+                <span class="nodo animate">1</span><span class="op">→</span>
+                <span class="nodo">2</span><span class="op">→</span>
+                <span class="nodo">3</span><span class="op">→</span>
+                <span class="nodo">5</span><span class="op">→</span>
+                <span class="nodo">8</span><span class="op">→</span>
+                <span class="nodo">13</span><span class="op">→</span>
+                <span class="nodo highlight">21</span><span class="op">→</span>
+                <span class="puntos">...</span>
+            </div>
+            <div class="bloque-codigo">
+    <h3 style="color: var(--bts-lila); margin-bottom: 15px; font-family: var(--fuente);">
+        💻 Código de JavaScript utilizado para la serie de Fibonacci
+    </h3>
+<pre><code><span class="com">// 1. Escuchamos el clic del botón de la interfaz</span>
+document.getElementById('btn-calcular-fibonacci').addEventListener('click', calcularFibonacciSaver);
+
+function calcularFibonacciSaver() {
+    <span class="com">// 2. Captura de datos desde el DOM</span>
+    var baseDinero = parseFloat(document.getElementById('base-dinero').value);
+    var niveles = parseInt(document.getElementById('niveles').value);
+    var divResultado = document.getElementById('resultado-fibonacci');
+
+    <span class="com">// 3. Validación de rangos seguros</span>
+    if (isNaN(baseDinero) || baseDinero &lt;= 0 || isNaN(niveles) || niveles &lt; 2 || niveles &gt; 24) {
+        divResultado.innerHTML = "&lt;span class='error-msg'&gt;⚠ Datos inválidos.&lt;/span&gt;";
+        return;
+    }
+
+    <span class="com">// 4. Inicialización de variables escalares puras (sin vectores)</span>
+    var a = 1, b = 1, c, acumulado = 0;
+    var html = "&lt;div class='fib-grid'&gt;";
+
+    <span class="com">// 5. Ciclo iterativo eficiente (While de control de flujos)</span>
+    var i = 1;
+    while (i &lt;= niveles) {
+        var depositoSemana = a * baseDinero;
+        acumulado = acumulado + depositoSemana;
+
+        html = html +
+            "&lt;div class='fib-item'&gt;" +
+            "  &lt;span class='fib-nivel'&gt;Semana " + i + "&lt;/span&gt;" +
+            "  &lt;span class='fib-valor'&gt;Bs. " + depositoSemana.toFixed(2) + "&lt;/span&gt;" +
+            "&lt;/div&gt;";
+
+        c = a + b;
+        a = b;
+        b = c;
+        i = i + 1;
+    }
+    
+    <span class="com">// 6. Renderizado final en la interfaz</span>
+    divResultado.innerHTML = html + "&lt;/div&gt;";
+}</code></pre>
+</div>
+            
+
+<div class="simulador-kawaii-box">
+    <div class="badge-kawaii-status">🌸 CON FIBONACCI</div>
+    
+    <h2>📊 Fibonacci Saver — ¡Tu Motor de Ahorro Feliz! ✨</h2>
+    <p class="desc-kawaii">Ingresa tus datos base para proyectar la mágica secuencia de depósitos progresivos y ver cómo crece tu monedero acumulado.</p>
+
+    <form id="form-fibonacci" onsubmit="return false;" novalidate>
+        <div class="inputs-inline">
+            <div class="grupo-input-kawaii">
+                <label for="base-dinero">💰 Depósito Inicial (Bs.)</label>
+                <input type="number" id="base-dinero" min="1" value="5" placeholder="Ej. 5">
+            </div>
+            
+            <div class="grupo-input-kawaii">
+                <label for="niveles">📅 Semanas (2 - 24 semanas)</label>
+                <input type="number" id="niveles" min="2" max="24" value="10" placeholder="Ej. 10">
+            </div>
+        </div>
+        
+        <button type="button" id="btn-calcular-fibonacci" class="btn-kawaii-glow">
+            💖 ¡Proyectar Mi Plan de Ahorro! ⚡
+        </button>
+    </form>
+</div>
+
+            <div id="resultado-fibonacci" class="resultado-box" aria-live="polite">
+                <div class="placeholder-texto">
+                    <span>🪙</span>
+                    <p>El plan financiero aparecerá aquí monetizado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="primos" class="section">
+            <div class="content-box">
+                <span class="badge">Aplicando numeros primos</span>
+                <h2>Protege tu seguridad</h2>
+                <p>Cada vez que inicias sesión en una plataforma o realizas una transacción bancaria, los números primos protegen tu información. La seguridad digital actual se sostiene sobre la dificultad matemática de factorizar números extremadamente grandes que son el producto de dos primos únicos.</p>
+                <p>Al igual que un candado digital inquebrantable, estos valores numéricos impiden que atacantes intercepten tus credenciales, garantizando que tu navegación e identidad se mantengan en un entorno completamente privado.</p>
+            </div>
+        </section>
+
+        <section class="tarjeta" id="contexto-primos">
+            
+                <div class="tabla-contenedor">
+                    <h3>Escala de Validación Base (Tokens Comunes)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código Token</th>
+                                <th>Longitud</th>
+                                <th>Divisores</th>
+                                <th>Estado de Seguridad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Código 7</td><td>1 Dígito</td><td>1, 7</td><td><span class="tag tag-seguro">SEGURO (Primo)</span></td></tr>
+                            <tr><td>Código 9</td><td>1 Dígito</td><td>1, 3, 9</td><td><span class="tag tag-rechazado">RECHAZADO (Múltiplo de 3)</span></td></tr>
+                            <tr><td>Código 97</td><td>2 Dígitos</td><td>1, 97</td><td><span class="tag tag-seguro">SEGURO (Primo)</span></td></tr>
+                            <tr><td>Código 100</td><td>3 Dígitos</td><td>Multiples</td><td><span class="tag tag-rechazado">RECHAZADO (Múltiplo de 2)</span></td></tr>
+                            <tr><td>Código 739</td><td>3 Dígitos</td><td>1, 739</td><td><span class="tag tag-seguro">SEGURO (Primo)</span></td></tr>
+                            <tr><td>Código 8293</td><td>4 Dígitos</td><td>1, 8293</td><td><span class="tag tag-seguro">SEGURO (Primo)</span></td></tr>
+                            <tr><td>Código 9999</td><td>4 Dígitos</td><td>Multiples</td><td><span class="tag tag-rechazado">RECHAZADO (Múltiplo de 3)</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 40px;"><span class="icon">🛡️</span> Validador de Seguridad Criptográfica</h2>
+            <p class="desc-form">Ingresa un código numérico entero para verificar si cumple la condición de primalidad y evaluar su viabilidad como clave de acceso segura.</p>
+<div class="bloque-codigo-premium" style="margin-top: 30px;">
+    <div class="codigo-header-premium">
+        <div class="controles-consola">
+            <span class="punto-control mac-rojo"></span>
+            <span class="punto-control mac-amarillo"></span>
+            <span class="punto-control mac-verde"></span>
+        </div>
+        <div class="pestana-archivo" style="font-family: var(--fuente); font-weight: 600;">
+            💻 Código de JavaScript utilizado para la validación de números primos
+        </div>
+    </div>
+    <div class="codigo-wrapper-scroll">
+<pre><code><span class="com">/**
+ * PRIME SHIELD - Motor de Verificación Criptográfica Escalar
+ */</span>
+<span class="keyword">const</span> btnValidarPrimo = document.getElementById(<span class="string">'btn-validar-primo'</span>);
+<span class="keyword">if</span> (btnValidarPrimo) {
+    btnValidarPrimo.addEventListener(<span class="string">'click'</span>, validarCodigoPrimo);
+}
+
+<span class="keyword">function</span> <span class="function">validarCodigoPrimo</span>() {
+    <span class="keyword">var</span> inputCodigo = document.getElementById(<span class="string">'codigo-token'</span>);
+    <span class="keyword">var</span> divResultado = document.getElementById(<span class="string">'resultado-primos'</span>);
+    
+    <span class="keyword">if</span> (!inputCodigo || !divResultado) <span class="keyword">return</span>;
+    
+    <span class="keyword">var</span> numero = parseInt(inputCodigo.value);
+
+    <span class="keyword">if</span> (isNaN(numero) || numero &lt; 1) {
+        divResultado.innerHTML = `
+            &lt;div class='error-box-anim'&gt;
+                &lt;span&gt;⚠ ERROR CRÍTICO:&lt;/span&gt; Por favor, ingresa un código numérico entero positivo mayor a 0.
+            &lt;/div&gt;`;
+        <span class="keyword">return</span>;
+    }
+
+    <span class="com">// Casos base escalares</span>
+    <span class="keyword">if</span> (numero === 1) {
+        generarGridVisual(<span class="keyword">false</span>, <span class="string">"SISTEMA VULNERABLE"</span>, <span class="string">"El número 1 no es primo por definición."</span>, numero);
+        <span class="keyword">return</span>;
+    }
+    <span class="keyword">if</span> (numero === 2 || numero === 3) {
+        generarGridVisual(<span class="keyword">true</span>, <span class="string">"SISTEMA SEGURO"</span>, <span class="string">"Primo absoluto. Excelente nivel de protección."</span>, numero);
+        <span class="keyword">return</span>;
+    }
+    <span class="keyword">if</span> (numero % 2 === 0 || numero % 3 === 0) {
+        <span class="keyword">var</span> divisor = (numero % 2 === 0) ? 2 : 3;
+        generarGridVisual(<span class="keyword">false</span>, <span class="string">"SISTEMA RECHAZADO"</span>, <span class="string">"Código predecible. Factor directo de "</span> + divisor + <span class="string">"."</span>, numero);
+        <span class="keyword">return</span>;
+    }
+
+    <span class="com">// Algoritmo While de primalidad pura</span>
+    <span class="keyword">var</span> esPrimo = <span class="keyword">true</span>;
+    <span class="keyword">var</span> factorBuscado = 0;
+    <span class="keyword">var i</span> = 5;
+
+    <span class="keyword">while</span> (i * i &lt;= numero) {
+        <span class="keyword">if</span> (numero % i === 0) {
+            esPrimo = <span class="keyword">false</span>;
+            factorBuscado = i;
+            <span class="keyword">break</span>; 
+        }
+        <span class="keyword">if</span> (numero % (i + 2) === 0) {
+            esPrimo = <span class="keyword">false</span>;
+            factorBuscado = i + 2;
+            <span class="keyword">break</span>; 
+        }
+        i = i + 6;
+    }
+
+    <span class="keyword">if</span> (esPrimo) {
+        generarGridVisual(<span class="keyword">true</span>, <span class="string">"SISTEMA SEGURO"</span>, <span class="string">"Código aprobado con éxito. Carece de divisores."</span>, numero);
+    } <span class="keyword">else</span> {
+        generarGridVisual(<span class="keyword">false</span>, <span class="string">"SISTEMA RECHAZADO"</span>, <span class="string">"Ataque aritmético efectivo. Vulnerable al divisor "</span> + factorBuscado + <span class="string">"."</span>, numero);
+    }
+}
+
+<span class="keyword">function</span> <span class="function">generarGridVisual</span>(valido, estadoTexto, descripcion, original) {
+    <span class="keyword">var</span> divResultado = document.getElementById(<span class="string">'resultado-primos'</span>);
+    <span class="keyword">var</span> colorClase = valido ? <span class="string">"card-segura"</span> : <span class="string">"card-vulnerable"</span>;
+    <span class="keyword">var</span> badgeClase = valido ? <span class="string">"tag-seguro"</span> : <span class="string">"tag-rechazado"</span>;
+
+    <span class="keyword">var</span> html = `
+        &lt;h3 class="resultado-titulo"&gt;&gt; Reporte de Diagnóstico Estructural:&lt;/h3&gt;
+        &lt;div class="fib-grid"&gt;
+            &lt;div class="fib-item \${colorClase}"&gt;
+                &lt;span class="fib-nivel"&gt;Análisis de Integridad&lt;/span&gt;
+                &lt;span class="fib-valor"&gt;\${estadoTexto}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;`;
+    
+    divResultado.innerHTML = html;
+}</code></pre>
+    </div>
+</div>
+            <h2 style="margin-top: 40px;"><span class="icon">🛡️</span> Validador de Seguridad Criptográfica</h2>
+            <p class="desc-form">Ingresa un código numérico entero para verificar si cumple la condición de primalidad y evaluar su viabilidad como clave de acceso segura.</p>
+<div class="bloque-codigo-premium" style="margin-top: 30px;">
+    <div class="codigo-header-premium">
+        <div class="controles-consola">
+            <span class="punto-control mac-rojo"></span>
+            <span class="punto-control mac-amarillo"></span>
+            <span class="punto-control mac-verde"></span>
+        </div>
+            <form id="form-primos" onsubmit="return false;" novalidate>
+                <div class="inputs-inline">
+                    <div class="grupo-input">
+                        <label for="codigo-token">Código Numérico a Validar</label>
+                        <div class="input-glow-wrapper">
+                            <span class="input-icon">🔐</span>
+                            <input type="number" id="codigo-token" min="2" max="99999999" value="8293" placeholder="Ej. 8293">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="btn-validar-primo" class="btn-premium">
+                    <span>⚡ Verificar Primalidad del Código</span>
+                </button>
+            </form>
+
+            <div id="resultado-primos" class="resultado-box" aria-live="polite">
+                <div class="placeholder-texto">
+                    <div class="escudo-animado">🛡️</div>
+                    <p>El diagnóstico de seguridad aparecerá aquí tras presionar el botón.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ambos" class="section alternate-bg">
+            <div class="content-box">
+                <span class="badge">Aplicando Ambos</span>
+                <h2>Criptografia</h2>
+                <p>¿Qué sucede cuando unimos la secuencia de crecimiento de Fibonacci con las propiedades de aislamiento de los números primos? Obtenemos algoritmos de criptografía avanzada y generadores de claves pseudoaleatorias ultra-seguras.</p>
+                <p>Esta combinación genera patrones dinámicos en memoria que cambian constantemente su tamaño estructural basándose en Fibonacci, mientras que la encriptación dura se ejecuta con bases primas. Es el balance perfecto entre adaptabilidad biológica y robustez algorítmica.</p>
+            
+            </div>
+        <div class="bloque-codigo-premium fusion-box">
+    
+    <div class="fusion-header">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <div class="mac-dots">
+                <span class="rojo"></span>
+                <span class="amarillo"></span>
+                <span class="verde"></span>
+            </div>
+            <span class="pestana-archivo">fusionSimbiotica.js</span>
+        </div>
+        
+        <button id="btn-copiar-codigo-fusion" class="btn-copiar-cyber">
+            📋 Copiar Código
+        </button>
+    </div>
+    
+    <div class="fusion-body">
+<pre><code id="texto-codigo-fusion"><span class="js-comment">// 1. Escuchamos el clic del botón de la interfaz</span>
+document.getElementById(<span class="js-string">'btn-generar-token'</span>).addEventListener(<span class="js-string">'click'</span>, generarTokenSimbiotico);
+
+<span class="js-comment">// Banco de datos estático (Números primos criptográficos)</span>
+<span class="js-keyword">const</span> primosPool = [<span class="js-number">104729</span>, <span class="js-number">1299709</span>, <span class="js-number">15485863</span>, <span class="js-number">179424673</span>];
+
+<span class="js-keyword">function</span> <span class="js-function">generarTokenSimbiotico</span>() {
+    <span class="js-comment">// 2. Captura de elementos de salida del DOM</span>
+    <span class="js-keyword">var</span> fibText = document.getElementById(<span class="js-string">'output-fibonacci'</span>);
+    <span class="js-keyword">var</span> primosText = document.getElementById(<span class="js-string">'output-primos'</span>);
+    <span class="js-keyword">var</span> tokenText = document.getElementById(<span class="js-string">'output-token'</span>);
+
+    <span class="js-comment">// 3. Fase Fibonacci: Saltos orgánicos dinámicos</span>
+    <span class="js-keyword">var</span> f0 = <span class="js-number">0</span>, f1 = <span class="js-number">1</span>, temp;
+    <span class="js-keyword">var</span> iteracionesRandom = Math.floor(Math.random() * <span class="js-number">8</span>) + <span class="js-number">5</span>; 
+    
+    <span class="js-keyword">var</span> i = <span class="js-number">0</span>;
+    <span class="js-keyword">while</span> (i &lt; iteracionesRandom) {
+        temp = f0 + f1;
+        f0 = f1;
+        f1 = temp;
+        i = i + <span class="js-number">1</span>;
+    }
+    fibText.innerHTML = <span class="js-string">"F("</span> + iteracionesRandom + <span class="js-string">") calculado: &lt;strong&gt;"</span> + f1 + <span class="js-string">"&lt;/strong&gt;."</span>;
+
+    <span class="js-comment">// 4. Fase Números Primos: Simulación de selección RSA</span>
+    <span class="js-keyword">var</span> p = primosPool[Math.floor(Math.random() * primosPool.length)];
+    <span class="js-keyword">var</span> q = primosPool[Math.floor(Math.random() * primosPool.length)];
+    <span class="js-keyword">while</span> (q === p) { 
+        q = primosPool[Math.floor(Math.random() * primosPool.length)];
+    }
+    
+    <span class="js-keyword">var</span> moduloCifradoN = p * q;
+    primosText.innerHTML = <span class="js-string">"Producto compuesto (N): &lt;strong&gt;"</span> + moduloCifradoN + <span class="js-string">"&lt;/strong&gt;"</span>;
+
+    <span class="js-comment">// 5. Fusión final y formateo del Token (XXXX-XXXX-XXXX)</span>
+    <span class="js-keyword">var</span> semillaFinal = moduloCifradoN + f1;
+    <span class="js-keyword">var</span> stringSemilla = semillaFinal.toString();
+    
+    <span class="js-keyword">var</span> bloque1 = stringSemilla.substring(<span class="js-number">0</span>, <span class="js-number">4</span>) || <span class="js-string">"8834"</span>;
+    <span class="js-keyword">var</span> bloque2 = stringSemilla.substring(<span class="js-number">4</span>, <span class="js-number">8</span>) || <span class="js-string">"9120"</span>;
+    <span class="js-keyword">var</span> bloque3 = stringSemilla.substring(<span class="js-number">8</span>, <span class="js-number">12</span>) || <span class="js-string">"4751"</span>;
+    
+    tokenText.innerText = bloque1 + <span class="js-string">"-"</span> + bloque2 + <span class="js-string">"-"</span> + bloque3;
+}</code></pre>
+    </div>
+</div>
+
+            <div class="contenedor">
+                <div class="panel-cripto" style="margin-top: 30px; width: 100%; max-width: 650px;">
+                    <div class="panel-header">
+                        <div class="puntos-interfaz"><span></span><span></span><span></span></div>
+                        <span class="panel-titulo">SIMULADOR CRYPTO-TOKEN v1.0.2</span>
+                    </div>
+                    
+                    <div class="panel-body">
+                        <div class="control-inputs">
+                            <p>Presiona el botón para iniciar la simulación simbiótica matemática en memoria volátil.</p>
+                            <button onclick="generarTokenSimbiotico()" class="btn-primary" style="margin-top: 10px; width: 100%;">
+                                ⚡ Generar Llave de Seguridad
+                            </button>
+                        </div>
+
+                        <div class="consola-resultados" style="margin-top: 20px;">
+                            <div class="consola-linea">
+                                <span class="consola-tag lila">Fibonacci (Ritmo):</span>
+                                <span id="output-fibonacci" class="consola-texto">Esperando inicialización...</span>
+                            </div>
+                            <div class="consola-linea">
+                                <span class="consola-tag rosa">Primos (Candado):</span>
+                                <span id="output-primos" class="consola-texto">Esperando factores P y Q...</span>
+                            </div>
+                            <div class="consola-linea token-destacado">
+                                <span class="consola-tag verde">Llave Generada:</span>
+                                <span id="output-token" class="consola-token">0000-0000-0000</span>
+                                <button id="btn-copiar-token" style="padding: 4px 10px; font-size: 0.75rem; background-color: #17223b; color: #79c0ff; border: 1px solid #2d3d60; border-radius: 4px; cursor: pointer; font-family: monospace; font-weight: bold; transition: all 0.2s;">
+                                 📋 Copiar
+                             </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-explicativa" style="margin-top: 30px; width: 100%; max-width: 650px;">
+                    <h3>¿Qué problema resuelve este sistema en tu día a día?</h3>
+                    <p>Evita el <strong>secuestro de sesiones y los ataques de fuerza bruta</strong>. Si tu contraseña fuera siempre estática, una computadora hacker tarde o temprano la adivinaría. Al combinar estos dos pilares:</p>
+                    <ul style="padding-left: 20px;">
+                        <li><strong>Fibonacci:</strong> Cambia la longitud de los bloques de datos y el intervalo de expiración en milisegundos de forma orgánica, imposibilitando que el atacante prediga cuándo vencerá el código.</li>
+                        <li><strong>Números Primos:</strong> Mezcla matemáticamente los datos de tu dispositivo mediante multiplicación irreversible. Descomponer esa llave sin conocer los primos originales le tomaría a un atacante siglos de procesamiento.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Desafío Web — Prime Shield Security</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

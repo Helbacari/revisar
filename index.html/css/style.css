@@ -1,0 +1,1191 @@
+
+
+/* ==========================================================================
+   2. REGLAS GENERALES Y RESETEO DE NAVEGADOR
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Un gris muy claro descansa la vista */
+    color: #020202;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alternate-bg {
+    background-color: #ffffff; /* Alternancia limpia entre secciones */
+}
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #080808;
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande para el título principal */
+}
+
+p {
+    margin-bottom: 1.2rem; /* Separa los párrafos entre sí */
+}
+
+
+
+a:hover {
+    text-decoration: underline; /* El subrayado aparece solo al pasar el mouse */
+}
+.contenedor {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Badges o Etiquetas globales */
+.badge {
+    background-color: rgba(233, 71, 179, 0.9);
+    color: rgb(10, 10, 10);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================================================
+   3. BARRA DE NAVEGACIÓN (TOP-HEADER)
+   ========================================================================== */
+.top-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgb(253, 247, 247);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 12px 20px;
+}
+
+.top-header .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-img {
+    height: 90px;
+    width: auto;
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--bts-lila-texto);
+}
+
+/* ==========================================================================
+   4. SECCIÓN HERO (ESTILO CENTRADO)
+   ========================================================================== */
+.hero-section {
+    padding: 110px 20px 80px 20px;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.hero-container-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    width: 100%;
+}
+
+.hero-badge {
+    background-color: rgb(240, 152, 228);
+    color: var(--bts-rosa-texto);
+    border: 1px solid rgba(236, 72, 153, 0.2);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-title-giant {
+    font-size: 3.8rem;
+    color: rgb(8, 8, 8);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: rgb(56, 55, 55);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 720px;
+}
+
+.hero-buttons-group-centered {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-hero-cyber {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0e;
+    color: #ffffff;
+    border: 1px solid #101011;
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.12);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-hero-cyber:hover {
+    background-color: rgb(228, 146, 248);      /* Fucsia/Rosa pastel suave */
+    border-color: #e7a2cc;
+    color: #9d174d;                  /* Letra fucsia oscura para legibilidad */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(244, 114, 182, 0.35);
+}
+
+/* ==========================================================================
+   5. TARJETAS, SIMULADORES Y BLOQUES EXPLICATIVOS
+   ========================================================================== */
+.content-box {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-box h2, .tarjeta h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+    color: black;
+}
+
+/* Caja base de Tarjetas */
+.tarjeta, .tarjeta-explicativa, .simulador-kawaii-box {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+    padding: 35px;
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    box-shadow: 0 10px 30px rgba(148, 163, 184, 0.05);
+}
+
+/* Alertas de Notas de Ingeniería */
+
+
+.alerta-kawaii-nota code {
+    background: #ffffff;
+    color: var(--bts-rosa-texto);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Caja contenedora de los Simuladores Interactivos */
+.simulador-kawaii-box {
+    position: relative;
+    border: 2px solid black;
+}
+
+.badge-kawaii-status {
+    position: absolute;
+    top: -12px;
+    right: 25px;
+    background: var(--bts-lila);
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 14pxa;
+    border-radius: 20px;
+}
+
+.inputs-inline {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.grupo-input, .grupo-input-kawaii {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    color:#090d16;
+    text-align:left;
+}
+
+.grupo-input label, .grupo-input-kawaii label {
+    font-size: 0.85rem;
+    color: rgb(3, 3, 3);
+    font-weight: 600;
+}
+
+.grupo-input input, .grupo-input-kawaii input {
+    background-color: rgb(253, 251, 253);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.grupo-input input:focus, .grupo-input-kawaii input:focus {
+    outline: none;
+    border-color: #720880;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(233, 213, 255, 0.5);
+}
+
+/* REFUERZO: BOTÓN FIBONACCI SAVER (btn-kawaii-glow) */
+#form-fibonacci .btn-kawaii-glow,
+.simulador-kawaii-box .btn-kawaii-glow {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    margin-top: 25px;
+    background-color: rgb(155, 91, 207);
+    color: black;
+    border: 2px solid rgba(126, 34, 206, 0.15);
+    border-radius: 12px;
+    font-family: var(--fuente);
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(143, 69, 221, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#form-fibonacci .btn-kawaii-glow:hover,
+.simulador-kawaii-box .btn-kawaii-glow:hover {
+    background-color: rgb(233, 63, 162);
+    color: #0a090a;
+    border-color: rgb(138, 36, 151);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(126, 34, 206, 0.4);
+}
+
+#form-fibonacci .btn-kawaii-glow:active,
+.simulador-kawaii-box .btn-kawaii-glow:active {
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   6. INTERFAZ FINANCIERA: TABLAS DE PROYECCIÓN Y AHORRO
+   ========================================================================== */
+.tabla-contenedor {
+    width: 80%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.tabla-contenedor h3 {
+    font-size: 1.8rem;
+    color: rgb(3, 3, 3);
+    margin-bottom: 15px;
+}
+
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #c7c4c4;
+    min-width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+th, td {
+    padding: 10px 10px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #0d0d0e;
+}
+
+th {
+    background-color: #0f172a; /* Fondo oscuro táctico para encabezados */
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #eeb4e6; /* Cebreado suave */
+}
+
+
+
+/* ==========================================================================
+   7. EXPLICACIONES DE ALGORITMOS Y SECCIONES DE CÓDIGO
+   ========================================================================== */
+.secuencia-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    padding: 15px;
+    background: rgb(210, 175, 226);
+    border-radius: 12px;
+}
+
+.nodo {
+    background-color: #ffffff;
+    border: 1px solid white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: black;
+}
+
+.nodo.highlight {
+    background-color: rgb(236, 201, 232);
+    color: black;
+    border-color: rgba(245, 243, 248, 0.3);
+}
+
+.op {
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+}
+
+/* Consolas y editores de código */
+.bloque-codigo, .bloque-codigo-premium {
+    background-color: #051031; 
+    border-radius: 14px;
+    padding: 25px;
+    text-align: left;
+    margin: 25px 0;
+    overflow-x: auto;
+    box-shadow: inset 0 2px 8px white;
+}
+
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+/* Resaltado sintáctico suave */
+.com, .js-comment { color: #f6f8fa; font-style: italic; }
+.keyword, .js-keyword { color: #f472b6; font-weight: bold; }
+.string, .js-string { color: #38bdf8; }
+.function, .js-function { color: #fbbf24; }
+
+/* ==========================================================================
+   ESTRUCTURA INTEGRADA: CIFRADO SIMBIÓTICO (#ambos)
+   ========================================================================== */
+#ambos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 80px 20px;
+}
+
+#ambos .bloque-codigo-premium.fusion-box {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: #0b0c0b;
+    border-radius: 14px;
+    border: 1px solid #e9ecf1;
+}
+
+.fusion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #070707;
+    padding: 12px 20px;
+    border-bottom: 1px solid #213b1e;
+}
+
+.btn-copiar-cyber {
+    background: #87e70a;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+/* CONSOLA DE SALIDA: MONITOREO DE TOKEN SIMBIÓTICO */
+.panel-cripto {
+    width: 100%;
+    max-width: 850px; 
+    margin: 30px auto;
+    background: #0f172a; /* Mismo fondo que el formulario táctico */
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.3), 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
+.panel-header {
+    background: #161609;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2c3b1e;
+}
+
+.puntos-interfaz span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.puntos-interfaz span:nth-child(1) { background-color: #ef4444; }
+.puntos-interfaz span:nth-child(2) { background-color: #f59e0b; }
+.puntos-interfaz span:nth-child(3) { background-color: #10b981; }
+
+.panel-titulo {
+    color: #64748b;
+    font-family: monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.panel-body {
+    padding: 30px;
+    color: #d6e1cb;
+}
+
+.panel-body p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.consola-resultados {
+    background-color: #1e293b; /* Gris pizarra de contraste */
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1px solid #334155;
+}
+
+.consola-linea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    padding-bottom: 10px;
+    color: #eef0e2;
+}
+
+.consola-linea:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.consola-texto {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.consola-linea.token-destacado {
+    background-color: #090d16; /* Foco negro absoluto para la llave */
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(74, 222, 128, 0.25);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.consola-token {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #4ade80; /* Verde neón Matrix */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
+}
+
+#btn-copiar-token {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    background-color: #1e293b;
+    color: #38bdf8;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--fuente);
+    font-weight: 700;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#btn-copiar-token:hover {
+    background-color: var(--bts-lila-texto);
+    color: #ffffff;
+    border-color: var(--bts-lila-texto);
+    box-shadow: 0 0 12px rgba(126, 34, 206, 0.3);
+}
+
+.consola-tag {
+    font-weight: bold;
+}
+.consola-tag.lila { color: #c084fc; }
+.consola-tag.rosa { color: #f472b6; }
+.consola-tag.verde { color: #4ade80; }
+
+/* ==========================================================================
+   8. REPORTE DE DIAGNÓSTICO ESTRUCTURAL (PRIME SHIELD DIAGNOSTIC)
+   ========================================================================== */
+.resultado-titulo {
+    font-family: monospace;
+    font-size: 1rem;
+    color: red;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+#resultado-primos .fib-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+#resultado-primos .fib-item {
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+#resultado-primos .fib-nivel {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+#resultado-primos .fib-valor {
+    font-family: red;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+#resultado-primos .fib-item.card-segura {
+    background: linear-gradient(135deg, #b4e7c4 0%, #d1fae5 100%);
+    border-color: rgba(8, 129, 85, 0.3);
+    color: rgb(46, 119, 44);
+}
+
+#resultado-primos .card-segura::before {
+    content: "🛡️";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    opacity: 0.25;
+}
+
+#resultado-primos .fib-item.card-vulnerable {
+    background: linear-gradient(135deg, #df0e1c 0%, #ffe4e6 100%);
+    border-color: rgba(251, 113, 133, 0.3);
+    color: black;
+}
+
+#resultado-primos .card-vulnerable::before {
+    content: "⚠️";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    opacity: 0.25;
+}
+
+.error-box-anim {
+    background-color: var(--color-error);
+    color: var(--color-error-texto);
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(185, 28, 28, 0.2);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(185, 28, 28, 0.05);
+}
+
+.error-box-anim span {
+    font-weight: 800;
+    font-family: monospace;
+}
+
+/* ==========================================================================
+   9. INTERFAZ TÁCTICA: FORMULARIO VALIDADOR DE NÚMEROS PRIMOS (MEJORADO)
+   ========================================================================== */
+#form-primos {
+    background-color: #0a0a0a; /* Fondo azul noche profundo (Estilo terminal) */
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 850px; /* Alineación perfecta en la cuadrícula maestro */
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.3), 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
+/* Forzar que el contenedor inline se adapte correctamente */
+#form-primos .inputs-inline {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#form-primos .grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+#form-primos label {
+    color: #ad21c0; /* Gris suave táctico */
+    font-family: monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+/* Envoltura del input: Posicionamiento relativo absoluto para el icono */
+.input-glow-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Icono del candado integrado perfectamente centrado verticalmente */
+.input-icon {
+    position: absolute;
+    left: 18px;
+    font-size: 1.2rem;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* El campo de texto numérico optimizado */
+#form-primos input[type="number"] {
+    background-color: #1e293b; /* Gris pizarra interno */
+    border: 2px solid #334155;
+    color: #38bdf8; /* Números en azul cian de consola */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 14px 16px 14px 50px; /* Espacio calibrado a la izquierda para que no pise el emoji */
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Remueve las flechas nativas del input de número para que parezca una consola real */
+#form-primos input[type="number"]::-webkit-inner-spin-button, 
+#form-primos input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+#form-primos input[type="number"] {
+    appearance: textfield;
+}
+
+/* Efecto de enfoque: Transición suave a verde/lila al escribir */
+#form-primos input[type="number"]:focus {
+    border-color: #c084fc; /* Borde lila de enfoque */
+    background-color: #090d16; /* Fondo más oscuro al escribir */
+    color: #4ade80; /* Cambia a verde éxito */
+    box-shadow: 0 0 18px rgba(192, 132, 252, 0.25);
+}
+
+/* BOTÓN DE VERIFICACIÓN PREMIUM DE ESTADO */
+#btn-validar-primo.btn-premium {
+    width: 100%;
+    background-color: #1e293b; /* Fondo neutral oscuro */
+    border: 2px solid #334155;
+    color: #f8f6f6;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-family: var(--fuente);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover interactivo: Brillo de descarga lila premium */
+#btn-validar-primo.btn-premium:hover {
+    background-color: var(--bts-lila-texto);
+    border-color: var(--bts-lila-texto);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(126, 34, 206, 0.45);
+}
+
+/* Animación física al hacer click */
+#btn-validar-primo.btn-premium:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(241, 235, 239, 0.2);
+}
+
+
+/* ==========================================================================
+   10. PANEL DE RESULTADOS INTERACTIVOS: FIBONACCI SAVER
+   ========================================================================== */
+#resultado-fibonacci {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto 0 auto;
+    padding: 10px;
+}
+
+.fib-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.fib-item {
+    background: linear-gradient(135deg, #ffffff 0%, #fdfbfd 100%);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(148, 163, 184, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fib-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--bts-lila);
+    background: linear-gradient(135deg, #ffffff 0%, #f5f0ff 100%);
+    box-shadow: 0 8px 20px rgba(126, 34, 206, 0.08);
+}
+
+.fib-nivel {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--texto-principal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+.fib-valor {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--bts-lila-texto); 
+    background-color: #f3e8ff; /* Modificado: Lila pastel suave para combinar con la tipografía */
+    padding: 4px 10px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.error-msg {
+    display: block;
+    width: 100%;
+    background-color: var(--color-error);
+    color: var(--color-error-texto);
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(185, 28, 28, 0.15);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(185, 28, 28, 0.05);
+}
+
+/* ==========================================================================
+   11. CONTENEDOR MAESTRO DE RESULTADOS (.resultado-box)
+   ========================================================================== */
+.resultado-box {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(148, 163, 184, 0.08); 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.resultado-box h3 {
+    font-family: var(--fuente);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--texto-brillante);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resultado-box hr {
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    margin: 20px 0;
+}
+
+.resultado-box p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ESTADO DE ESPERA: PLACEHOLDER DE RESULTADOS */
+.placeholder-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 16px;
+}
+
+.placeholder-texto::before {
+    content: "📡";
+    font-size: 2.5rem;
+    animation: pulso-radar 2s infinite ease-in-out;
+    opacity: 0.7;
+}
+
+.placeholder-texto::after {
+    content: " _";
+    color: var(--bts-lila-texto);
+    animation: parpadeo-cursor 1s infinite steps(2, start);
+    font-weight: 800;
+}
+
+/* ==========================================================================
+   12. ANIMACIONES CRIPTOGRÁFICAS
+   ========================================================================== */
+@keyframes pulso-radar {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.12);
+        opacity: 1;
+        filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.2));
+    }
+}
+
+@keyframes parpadeo-cursor {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* ==========================================================================
+   13. FOOTER / PIE DE PÁGINA
+   ========================================================================== */
+.pie {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+/* ==========================================================================
+   14. OPTIMIZACIÓN SÍNCRO-ADAPTATIVA (RESPONSIVE MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 70px 15px 40px 15px;
+    }
+
+    .hero-title-giant {
+        font-size: 2.4rem; 
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons-group-centered {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px; 
+    }
+
+    .btn-hero-cyber {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+    
+    .inputs-inline {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .top-header .header-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .fusion-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .btn-copiar-cyber {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .consola-linea {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding-bottom: 12px;
+    }
+    
+    .consola-token {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+
+    #resultado-primos .fib-item {
+        padding: 20px;
+    }
+    
+    #resultado-primos .fib-valor {
+        font-size: 1.4rem;
+    }
+    
+    #resultado-primos .card-segura::before,
+    #resultado-primos .card-vulnerable::before {
+        display: none;
+    }
+
+    #form-primos {
+        padding: 20px;
+    }
+    
+    #form-primos input[type="number"] {
+        font-size: 1.1rem;
+        padding: 12px 14px 12px 42px;
+    }
+
+    .resultado-box {
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 16px;
+    }
+    
+    .resultado-box h3 {
+        font-size: 1.1rem;
+    }
+
+    th, td {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .fib-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .fib-item {
+        padding: 14px;
+    }
+    
+    .fib-valor {
+        font-size: 1.1rem;
+    }
+}
+/* Botón Copiar */
+.btn-copiar-cyber {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 5px;
+}
+.btn-copiar-cyber:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+}
+.btn-copiar-cyber.copiado-exito {
+    background: #10b981 !important;
+    border-color: #10b981;
+}
+
+/* Caja de sugerencias de números primos */
+.sugerencias-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px dashed rgba(148, 163, 184, 0.3);
+    border-radius: 12px;
+    text-align: left;
+}
+.sugerencias-lista {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.8rem;
+}
+.tag-sugerido {
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid #6366f1;
+    color: #c7d2fe;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.tag-sugerido:hover {
+    background: #6366f1;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+    transform: scale(1.05);
+}
